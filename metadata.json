@@ -1,0 +1,6 @@
+{
+  "name": "Herzgesundheit im Reifealter - E-Book Leitfaden",
+  "description": "Schützen Sie Ihr Herz mit einfachen Schritten und bleiben Sie bis ins hohe Alter aktiv und vital. Der praxisnahe 30-Seiten Leitfaden von Dr. Med. Elena V. Sommer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

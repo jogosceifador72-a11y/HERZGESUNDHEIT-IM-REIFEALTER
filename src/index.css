@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-navy-950: #0a1324;
+  --color-navy-900: #10223D;
+  --color-navy-800: #192e4f;
+  --color-navy-700: #243c63;
+  --color-gold-600: #996e25;
+  --color-gold-500: #B88A3B;
+  --color-gold-400: #d4a959;
+  --color-gold-100: #fbf5e6;
+  --color-cream-50: #FAF8F5;
+  --color-cream-100: #F3EFE9;
+  --color-cream-200: #E7E0D3;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF8F5;
+  color: #1f2937;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-serif);
+}
+
+/* Subtle custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F3EFE9;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8BFB0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A89D8B;
+}
+
+/* 3D Book shadow & perspective */
+.book-perspective {
+  perspective: 1200px;
+}
+
+.book-card {
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.book-card:hover {
+  transform: rotateY(-8deg) rotateX(4deg) translateY(-6px);
+}
